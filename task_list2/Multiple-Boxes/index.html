@@ -1,0 +1,92 @@
+<!-- //firstly we created a parent div 
+//inside parent div we create 3 child div with different ID's
+//after that we target the different div by its ID's inside style element 
+//then according to questions we make the every div with different border,background,border-radius,box shadows,text and hovering.  -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            
+        }
+        #box1 {
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+            border: 3px solid #000000;
+            border-radius: 10px;
+            box-shadow: 5px 5px 15px  #0088FF;
+            font-family: sans-serif;
+            margin-right: 20px;
+           
+        }
+
+        #box1:hover {
+            background-color: #26de95;
+            font-size: 20px;
+        }
+
+        #box2 {
+            width: 200px;
+            height: 200px;
+            background-color: #790ccc;
+            border: 5px dashed #bfe71f;
+            border-radius: 15px;
+            box-shadow: 10px 10px 10px #000000;
+            font-family: serif;
+            margin-right: 20px;
+        }
+
+        #box2:hover {
+            background-color: #15bfe9;
+            font-size: 20px;
+        }
+
+        #box3 {
+            width: 200px;
+            height: 200px;
+            background-color: #000000;
+            border: 10px double #c40808;
+            border-radius: 20px;
+            box-shadow: 10px 10px 10px 2px #FF00BF;
+            font-family: cursive;
+        }
+
+        #box3:hover {
+            background-color: #efe0eb;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <center><h1>Different Box with Different  Properties</h1></center>
+    
+    <div class="container">
+        <div id="box1">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div id="box2">
+            <p>Ut tristique urna vel velit pellentesque, vel vulputate purus lobortis.</p>
+        </div>
+        <div id="box3">
+            <p>Aenean velit tortor, consectetur sit amet lacus sed, congue aliquet quam.</p>
+        </div>
+    </div>
+</body>
+
+</html>
